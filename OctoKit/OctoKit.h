@@ -2,8 +2,8 @@
 //  OctoKit.h
 //  OctoKit
 //
-//  Created by eony on 26/04/2017.
-//  Copyright © 2017 Maxwell. All rights reserved.
+//  Created by Maxwell on 2017/4/26.
+//  Copyright © 2017年 Maxwell. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
