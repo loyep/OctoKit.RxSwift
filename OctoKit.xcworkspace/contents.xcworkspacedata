@@ -4,4 +4,13 @@
    <FileRef
       location = "group:OctoKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Alamofire/Alamofire.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Result/Result.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/ReactiveSwift/ReactiveSwift.xcodeproj">
+   </FileRef>
 </Workspace>
