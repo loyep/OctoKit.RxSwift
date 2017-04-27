@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+def libraries
+    pod 'OctoKit.swift', :path => "../"
+    pod 'Alamofire'
+    pod 'ReactiveSwift'
+end
+
+target 'Demo' do
+    
+    platform :ios, '8.0'
+    libraries
+    
+    target 'DemoTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+    target 'DemoUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+end

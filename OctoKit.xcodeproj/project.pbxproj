@@ -7,141 +7,118 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DA04275B726F74C69673103 /* Pods_OctoKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A4BCB13C79C6839FC6E56A /* Pods_OctoKitTests.framework */; };
-		C860ABA2553C52FB05C3621E /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063D11B43934DE3FB7DC0D1E /* Pods_OctoKit.framework */; };
-		CF66BA0C1EB0E29C00F7C685 /* OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF66BA021EB0E29C00F7C685 /* OctoKit.framework */; };
-		CF66BA111EB0E29C00F7C685 /* OctoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF66BA101EB0E29C00F7C685 /* OctoKitTests.swift */; };
-		CF66BA131EB0E29C00F7C685 /* OctoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CF66BA051EB0E29C00F7C685 /* OctoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C912071EB1DEA000258705 /* OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C911FD1EB1DEA000258705 /* OctoKit.framework */; };
+		29C9120C1EB1DEA000258705 /* OctoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C9120B1EB1DEA000258705 /* OctoKitTests.swift */; };
+		29C912191EB1DF2800258705 /* OCTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C912181EB1DF2800258705 /* OCTClient.swift */; };
+		29C9121B1EB1DFAC00258705 /* OctoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C9121A1EB1DFAC00258705 /* OctoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CF66BA0D1EB0E29C00F7C685 /* PBXContainerItemProxy */ = {
+		29C912081EB1DEA000258705 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CF66B9F91EB0E29C00F7C685 /* Project object */;
+			containerPortal = 29C911F41EB1DEA000258705 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CF66BA011EB0E29C00F7C685;
+			remoteGlobalIDString = 29C911FC1EB1DEA000258705;
 			remoteInfo = OctoKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		063D11B43934DE3FB7DC0D1E /* Pods_OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37A4BCB13C79C6839FC6E56A /* Pods_OctoKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43FDCA67CCA7327F0E6C1CB9 /* Pods-OctoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.debug.xcconfig"; sourceTree = "<group>"; };
-		94BD1434E80E7E110A1E7987 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
-		9ADA69211F2B453681567328 /* Pods-OctoKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKitTests/Pods-OctoKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		AFCA7CEEFECD2BBE2F0C7CD1 /* Pods-OctoKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKitTests/Pods-OctoKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CF66BA021EB0E29C00F7C685 /* OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF66BA051EB0E29C00F7C685 /* OctoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctoKit.h; sourceTree = "<group>"; };
-		CF66BA061EB0E29C00F7C685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF66BA0B1EB0E29C00F7C685 /* OctoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF66BA101EB0E29C00F7C685 /* OctoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoKitTests.swift; sourceTree = "<group>"; };
-		CF66BA121EB0E29C00F7C685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C911FD1EB1DEA000258705 /* OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C912011EB1DEA000258705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C912061EB1DEA000258705 /* OctoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C9120B1EB1DEA000258705 /* OctoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoKitTests.swift; sourceTree = "<group>"; };
+		29C9120D1EB1DEA000258705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C912181EB1DF2800258705 /* OCTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCTClient.swift; sourceTree = "<group>"; };
+		29C9121A1EB1DFAC00258705 /* OctoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctoKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CF66B9FE1EB0E29C00F7C685 /* Frameworks */ = {
+		29C911F91EB1DEA000258705 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C860ABA2553C52FB05C3621E /* Pods_OctoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF66BA081EB0E29C00F7C685 /* Frameworks */ = {
+		29C912031EB1DEA000258705 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF66BA0C1EB0E29C00F7C685 /* OctoKit.framework in Frameworks */,
-				9DA04275B726F74C69673103 /* Pods_OctoKitTests.framework in Frameworks */,
+				29C912071EB1DEA000258705 /* OctoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21165901E17CC826BDD5824C /* Pods */ = {
+		29C911F31EB1DEA000258705 = {
 			isa = PBXGroup;
 			children = (
-				43FDCA67CCA7327F0E6C1CB9 /* Pods-OctoKit.debug.xcconfig */,
-				94BD1434E80E7E110A1E7987 /* Pods-OctoKit.release.xcconfig */,
-				AFCA7CEEFECD2BBE2F0C7CD1 /* Pods-OctoKitTests.debug.xcconfig */,
-				9ADA69211F2B453681567328 /* Pods-OctoKitTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		42E3DAC503E03BFADE80206E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				063D11B43934DE3FB7DC0D1E /* Pods_OctoKit.framework */,
-				37A4BCB13C79C6839FC6E56A /* Pods_OctoKitTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CF66B9F81EB0E29C00F7C685 = {
-			isa = PBXGroup;
-			children = (
-				CF66BA041EB0E29C00F7C685 /* OctoKit */,
-				CF66BA0F1EB0E29C00F7C685 /* OctoKitTests */,
-				CF66BA031EB0E29C00F7C685 /* Products */,
-				21165901E17CC826BDD5824C /* Pods */,
-				42E3DAC503E03BFADE80206E /* Frameworks */,
+				29C9120A1EB1DEA000258705 /* OctoKitTests */,
+				29C911FE1EB1DEA000258705 /* Products */,
+				29C911FF1EB1DEA000258705 /* Sources */,
 			);
 			sourceTree = "<group>";
 		};
-		CF66BA031EB0E29C00F7C685 /* Products */ = {
+		29C911FE1EB1DEA000258705 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF66BA021EB0E29C00F7C685 /* OctoKit.framework */,
-				CF66BA0B1EB0E29C00F7C685 /* OctoKitTests.xctest */,
+				29C911FD1EB1DEA000258705 /* OctoKit.framework */,
+				29C912061EB1DEA000258705 /* OctoKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CF66BA041EB0E29C00F7C685 /* OctoKit */ = {
+		29C911FF1EB1DEA000258705 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CF66BA051EB0E29C00F7C685 /* OctoKit.h */,
-				CF66BA061EB0E29C00F7C685 /* Info.plist */,
+				29C912171EB1DEE100258705 /* Supporting Files */,
+				29C912181EB1DF2800258705 /* OCTClient.swift */,
 			);
-			path = OctoKit;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		CF66BA0F1EB0E29C00F7C685 /* OctoKitTests */ = {
+		29C9120A1EB1DEA000258705 /* OctoKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				CF66BA101EB0E29C00F7C685 /* OctoKitTests.swift */,
-				CF66BA121EB0E29C00F7C685 /* Info.plist */,
+				29C9120D1EB1DEA000258705 /* Info.plist */,
+				29C9120B1EB1DEA000258705 /* OctoKitTests.swift */,
 			);
 			path = OctoKitTests;
+			sourceTree = "<group>";
+		};
+		29C912171EB1DEE100258705 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29C9121A1EB1DFAC00258705 /* OctoKit.h */,
+				29C912011EB1DEA000258705 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CF66B9FF1EB0E29C00F7C685 /* Headers */ = {
+		29C911FA1EB1DEA000258705 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF66BA131EB0E29C00F7C685 /* OctoKit.h in Headers */,
+				29C9121B1EB1DFAC00258705 /* OctoKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CF66BA011EB0E29C00F7C685 /* OctoKit */ = {
+		29C911FC1EB1DEA000258705 /* OctoKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF66BA161EB0E29C00F7C685 /* Build configuration list for PBXNativeTarget "OctoKit" */;
+			buildConfigurationList = 29C912111EB1DEA000258705 /* Build configuration list for PBXNativeTarget "OctoKit" */;
 			buildPhases = (
-				B974FC28EF247A3A9FEAC6B3 /* [CP] Check Pods Manifest.lock */,
-				CF66B9FD1EB0E29C00F7C685 /* Sources */,
-				CF66B9FE1EB0E29C00F7C685 /* Frameworks */,
-				CF66B9FF1EB0E29C00F7C685 /* Headers */,
-				CF66BA001EB0E29C00F7C685 /* Resources */,
-				39923CEAA7981B0B508848CC /* [CP] Copy Pods Resources */,
+				29C911F81EB1DEA000258705 /* Sources */,
+				29C911F91EB1DEA000258705 /* Frameworks */,
+				29C911FA1EB1DEA000258705 /* Headers */,
+				29C911FB1EB1DEA000258705 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -149,77 +126,76 @@
 			);
 			name = OctoKit;
 			productName = OctoKit;
-			productReference = CF66BA021EB0E29C00F7C685 /* OctoKit.framework */;
+			productReference = 29C911FD1EB1DEA000258705 /* OctoKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CF66BA0A1EB0E29C00F7C685 /* OctoKitTests */ = {
+		29C912051EB1DEA000258705 /* OctoKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF66BA191EB0E29C00F7C685 /* Build configuration list for PBXNativeTarget "OctoKitTests" */;
+			buildConfigurationList = 29C912141EB1DEA000258705 /* Build configuration list for PBXNativeTarget "OctoKitTests" */;
 			buildPhases = (
-				C6F75153DD8EEDC9F8A2E4AD /* [CP] Check Pods Manifest.lock */,
-				CF66BA071EB0E29C00F7C685 /* Sources */,
-				CF66BA081EB0E29C00F7C685 /* Frameworks */,
-				CF66BA091EB0E29C00F7C685 /* Resources */,
-				2F85A1DE5A614D50D9E44BD7 /* [CP] Embed Pods Frameworks */,
-				ACE2533DEBD4D98902558D21 /* [CP] Copy Pods Resources */,
+				29C912021EB1DEA000258705 /* Sources */,
+				29C912031EB1DEA000258705 /* Frameworks */,
+				29C912041EB1DEA000258705 /* Resources */,
+				29C9121D1EB1E05600258705 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CF66BA0E1EB0E29C00F7C685 /* PBXTargetDependency */,
+				29C912091EB1DEA000258705 /* PBXTargetDependency */,
 			);
 			name = OctoKitTests;
 			productName = OctoKitTests;
-			productReference = CF66BA0B1EB0E29C00F7C685 /* OctoKitTests.xctest */;
+			productReference = 29C912061EB1DEA000258705 /* OctoKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CF66B9F91EB0E29C00F7C685 /* Project object */ = {
+		29C911F41EB1DEA000258705 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Maxwell;
 				TargetAttributes = {
-					CF66BA011EB0E29C00F7C685 = {
+					29C911FC1EB1DEA000258705 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					CF66BA0A1EB0E29C00F7C685 = {
+					29C912051EB1DEA000258705 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CF66B9FC1EB0E29C00F7C685 /* Build configuration list for PBXProject "OctoKit" */;
+			buildConfigurationList = 29C911F71EB1DEA000258705 /* Build configuration list for PBXProject "OctoKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CF66B9F81EB0E29C00F7C685;
-			productRefGroup = CF66BA031EB0E29C00F7C685 /* Products */;
+			mainGroup = 29C911F31EB1DEA000258705;
+			productRefGroup = 29C911FE1EB1DEA000258705 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF66BA011EB0E29C00F7C685 /* OctoKit */,
-				CF66BA0A1EB0E29C00F7C685 /* OctoKitTests */,
+				29C911FC1EB1DEA000258705 /* OctoKit */,
+				29C912051EB1DEA000258705 /* OctoKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CF66BA001EB0E29C00F7C685 /* Resources */ = {
+		29C911FB1EB1DEA000258705 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF66BA091EB0E29C00F7C685 /* Resources */ = {
+		29C912041EB1DEA000258705 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,111 +205,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F85A1DE5A614D50D9E44BD7 /* [CP] Embed Pods Frameworks */ = {
+		29C9121D1EB1E05600258705 /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				Alamofire.framework,
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "Copy Carthage Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoKitTests/Pods-OctoKitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		39923CEAA7981B0B508848CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ACE2533DEBD4D98902558D21 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoKitTests/Pods-OctoKitTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B974FC28EF247A3A9FEAC6B3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C6F75153DD8EEDC9F8A2E4AD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
+			shellScript = " exec \"${SRCROOT}/scripts/copy-carthage-frameworks.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CF66B9FD1EB0E29C00F7C685 /* Sources */ = {
+		29C911F81EB1DEA000258705 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C912191EB1DF2800258705 /* OCTClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF66BA071EB0E29C00F7C685 /* Sources */ = {
+		29C912021EB1DEA000258705 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF66BA111EB0E29C00F7C685 /* OctoKitTests.swift in Sources */,
+				29C9120C1EB1DEA000258705 /* OctoKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CF66BA0E1EB0E29C00F7C685 /* PBXTargetDependency */ = {
+		29C912091EB1DEA000258705 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CF66BA011EB0E29C00F7C685 /* OctoKit */;
-			targetProxy = CF66BA0D1EB0E29C00F7C685 /* PBXContainerItemProxy */;
+			target = 29C911FC1EB1DEA000258705 /* OctoKit */;
+			targetProxy = 29C912081EB1DEA000258705 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		CF66BA141EB0E29C00F7C685 /* Debug */ = {
+		29C9120F1EB1DEA000258705 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -355,7 +272,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -375,19 +292,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		CF66BA151EB0E29C00F7C685 /* Release */ = {
+		29C912101EB1DEA000258705 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,7 +326,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -423,75 +340,87 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		CF66BA171EB0E29C00F7C685 /* Debug */ = {
+		29C912121EB1DEA000258705 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43FDCA67CCA7327F0E6C1CB9 /* Pods-OctoKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OctoKit/Info.plist;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.OctoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		CF66BA181EB0E29C00F7C685 /* Release */ = {
+		29C912131EB1DEA000258705 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94BD1434E80E7E110A1E7987 /* Pods-OctoKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OctoKit/Info.plist;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.OctoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		CF66BA1A1EB0E29C00F7C685 /* Debug */ = {
+		29C912151EB1DEA000258705 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFCA7CEEFECD2BBE2F0C7CD1 /* Pods-OctoKitTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = OctoKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.OctoKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		CF66BA1B1EB0E29C00F7C685 /* Release */ = {
+		29C912161EB1DEA000258705 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9ADA69211F2B453681567328 /* Pods-OctoKitTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = OctoKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.OctoKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -499,32 +428,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF66B9FC1EB0E29C00F7C685 /* Build configuration list for PBXProject "OctoKit" */ = {
+		29C911F71EB1DEA000258705 /* Build configuration list for PBXProject "OctoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF66BA141EB0E29C00F7C685 /* Debug */,
-				CF66BA151EB0E29C00F7C685 /* Release */,
+				29C9120F1EB1DEA000258705 /* Debug */,
+				29C912101EB1DEA000258705 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF66BA161EB0E29C00F7C685 /* Build configuration list for PBXNativeTarget "OctoKit" */ = {
+		29C912111EB1DEA000258705 /* Build configuration list for PBXNativeTarget "OctoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF66BA171EB0E29C00F7C685 /* Debug */,
-				CF66BA181EB0E29C00F7C685 /* Release */,
+				29C912121EB1DEA000258705 /* Debug */,
+				29C912131EB1DEA000258705 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CF66BA191EB0E29C00F7C685 /* Build configuration list for PBXNativeTarget "OctoKitTests" */ = {
+		29C912141EB1DEA000258705 /* Build configuration list for PBXNativeTarget "OctoKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF66BA1A1EB0E29C00F7C685 /* Debug */,
-				CF66BA1B1EB0E29C00F7C685 /* Release */,
+				29C912151EB1DEA000258705 /* Debug */,
+				29C912161EB1DEA000258705 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CF66B9F91EB0E29C00F7C685 /* Project object */;
+	rootObject = 29C911F41EB1DEA000258705 /* Project object */;
 }

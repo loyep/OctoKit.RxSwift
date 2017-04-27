@@ -2,18 +2,19 @@
 //  OctoKitTests.swift
 //  OctoKitTests
 //
-//  Created by Maxwell on 2017/4/26.
-//  Copyright © 2017年 Maxwell. All rights reserved.
+//  Created by eony on 27/04/2017.
+//  Copyright © 2017 Maxwell. All rights reserved.
 //
 
 import XCTest
-@testable import OctoKit
+import OctoKit
 
 class OctoKitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        print("aaa")
     }
     
     override func tearDown() {
