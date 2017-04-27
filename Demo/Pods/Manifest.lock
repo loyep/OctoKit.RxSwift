@@ -5,14 +5,10 @@ PODS:
   - OctoKit.swift/Core (1.0.0):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - ReactiveSwift (1.1.1):
-    - Result (~> 3.2)
   - Result (3.2.1)
 
 DEPENDENCIES:
-  - Alamofire
   - OctoKit.swift (from `../`)
-  - ReactiveSwift
 
 EXTERNAL SOURCES:
   OctoKit.swift:
@@ -21,9 +17,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   OctoKit.swift: dab1fff84a6f6b2d77a2e78492806b2ffe501329
-  ReactiveSwift: 2489549e3231a6ff68ec99f3d320bb264f10ba0a
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
 
-PODFILE CHECKSUM: 4186b007f12414d0ad74e567a7728b1bda72bf7f
+PODFILE CHECKSUM: 0fd193e6099637a3d1639302461a2409ceb1a270
 
 COCOAPODS: 1.2.0
