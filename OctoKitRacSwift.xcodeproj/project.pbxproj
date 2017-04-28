@@ -31,6 +31,11 @@
 		2904834A1EB3438900DA1686 /* Alamofire.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 29FA99AD1EB336910092BFC5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2904834B1EB3438900DA1686 /* ReactiveSwift.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 29FA99AE1EB336910092BFC5 /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2904834C1EB3438900DA1686 /* Result.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 29FA99AF1EB336910092BFC5 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2904834E1EB346AA00DA1686 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904834D1EB346AA00DA1686 /* Request.swift */; };
+		290483501EB34D8900DA1686 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904834F1EB34D8900DA1686 /* Router.swift */; };
+		290483511EB34D8900DA1686 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904834F1EB34D8900DA1686 /* Router.swift */; };
+		290483521EB34D8900DA1686 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904834F1EB34D8900DA1686 /* Router.swift */; };
+		290483531EB34D8900DA1686 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2904834F1EB34D8900DA1686 /* Router.swift */; };
 		29FA993B1EB3307E0092BFC5 /* OctoKitRacSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA993A1EB3307E0092BFC5 /* OctoKitRacSwiftTests.swift */; };
 		29FA993D1EB3307E0092BFC5 /* OctoKitRacSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FA992F1EB3307D0092BFC5 /* OctoKitRacSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29FA99A01EB334F50092BFC5 /* OctoKitRacSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FA993A1EB3307E0092BFC5 /* OctoKitRacSwiftTests.swift */; };
@@ -111,6 +116,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2904834D1EB346AA00DA1686 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		2904834F1EB34D8900DA1686 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		29FA992C1EB3307D0092BFC5 /* OctoKitRacSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctoKitRacSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FA992F1EB3307D0092BFC5 /* OctoKitRacSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctoKitRacSwift.h; sourceTree = "<group>"; };
 		29FA99301EB3307D0092BFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -234,6 +241,8 @@
 			children = (
 				29FA99461EB334390092BFC5 /* Supporting Files */,
 				29FA99A21EB3351E0092BFC5 /* Configuration.swift */,
+				2904834F1EB34D8900DA1686 /* Router.swift */,
+				2904834D1EB346AA00DA1686 /* Request.swift */,
 				29FA992F1EB3307D0092BFC5 /* OctoKitRacSwift.h */,
 			);
 			path = Sources;
@@ -567,6 +576,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FA99A31EB3351E0092BFC5 /* Configuration.swift in Sources */,
+				290483501EB34D8900DA1686 /* Router.swift in Sources */,
+				2904834E1EB346AA00DA1686 /* Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290483511EB34D8900DA1686 /* Router.swift in Sources */,
 				29FA99A41EB3351E0092BFC5 /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290483521EB34D8900DA1686 /* Router.swift in Sources */,
 				29FA99A51EB3351E0092BFC5 /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290483531EB34D8900DA1686 /* Router.swift in Sources */,
 				29FA99A61EB3351E0092BFC5 /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Maxwell. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 let githubApiURL = "https://api.github.com"
 let githubWebURL = "https://github.com"
@@ -60,13 +60,5 @@ public struct OAuthConfiguration: Configuration {
         self.token = token
         self.secrect = secrect
         self.scopes = scopes
-        
-        _ = scopes
     }
-    
-    //    public func authenticate() -> URL? {
-    ////        return
-    //        return
-    //    }
 }
-
