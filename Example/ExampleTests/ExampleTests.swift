@@ -15,8 +15,6 @@ class ExampleTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        let subject = TokenConfiguration("111")
-        XCTAssertEqual(subject.accessToken, "111")
     }
     
     override func tearDown() {
@@ -27,6 +25,8 @@ class ExampleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let subject = TokenConfiguration("111")
+        XCTAssertEqual(subject.accessToken, "111")
     }
     
     func testPerformanceExample() {
