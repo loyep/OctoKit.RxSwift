@@ -1,0 +1,6 @@
+framework module SwiftOctoKit {
+  umbrella header "SwiftOctoKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

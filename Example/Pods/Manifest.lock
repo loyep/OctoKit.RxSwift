@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Result (3.2.1)
+  - RxCocoa (3.4.0):
+    - RxSwift (~> 3.4)
+  - RxSwift (3.4.0)
+  - SwiftOctoKit (1.0.0):
+    - SwiftOctoKit/Core (= 1.0.0)
+  - SwiftOctoKit/Core (1.0.0):
+    - Alamofire (~> 4.4)
+    - Result (~> 3.0)
+  - SwiftOctoKit/RxSwift (1.0.0):
+    - RxCocoa
+    - RxSwift (~> 3.0)
+    - SwiftOctoKit/Core
+
+DEPENDENCIES:
+  - SwiftOctoKit (from `../`)
+  - SwiftOctoKit/RxSwift (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftOctoKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  RxCocoa: d14ef6b6029e1ddc6e966508c09289090de68ff9
+  RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
+  SwiftOctoKit: 41ff54a734aa685ac4b0f8f2f26b2327486786b7
+
+PODFILE CHECKSUM: dc45f32426fc085f9d35dd4b00491aa379afbe1a
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29171F001EB87322002BC7BA /* SwiftOctoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 29171EF21EB87322002BC7BA /* SwiftOctoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29171F201EB8749C002BC7BA /* RxSwiftOctoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 29171F121EB8749C002BC7BA /* RxSwiftOctoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29171F2E1EB874F8002BC7BA /* OctoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29171F2D1EB874F8002BC7BA /* OctoKitTests.swift */; };
+		29171F371EB875D1002BC7BA /* Alamofire+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29171F361EB875D1002BC7BA /* Alamofire+RxSwift.swift */; };
+		29171F3B1EB875E6002BC7BA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29171F381EB875E6002BC7BA /* Configuration.swift */; };
+		29171F3C1EB875E6002BC7BA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29171F391EB875E6002BC7BA /* Request.swift */; };
+		29171F3D1EB875E6002BC7BA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29171F3A1EB875E6002BC7BA /* Router.swift */; };
+		29171F3E1EB8766B002BC7BA /* SwiftOctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29171EEF1EB87322002BC7BA /* SwiftOctoKit.framework */; };
+		29171F3F1EB87672002BC7BA /* RxSwiftOctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29171F101EB8749C002BC7BA /* RxSwiftOctoKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29171F311EB874F8002BC7BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29171EE61EB87321002BC7BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29171EEE1EB87322002BC7BA;
+			remoteInfo = OctoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29171EEF1EB87322002BC7BA /* SwiftOctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29171EF21EB87322002BC7BA /* SwiftOctoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftOctoKit.h; sourceTree = "<group>"; };
+		29171EF31EB87322002BC7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29171F101EB8749C002BC7BA /* RxSwiftOctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftOctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29171F121EB8749C002BC7BA /* RxSwiftOctoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RxSwiftOctoKit.h; path = ../RxSwiftOctoKit/RxSwiftOctoKit.h; sourceTree = "<group>"; };
+		29171F2B1EB874F8002BC7BA /* OctoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29171F2D1EB874F8002BC7BA /* OctoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctoKitTests.swift; sourceTree = "<group>"; };
+		29171F2F1EB874F8002BC7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29171F361EB875D1002BC7BA /* Alamofire+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+RxSwift.swift"; sourceTree = "<group>"; };
+		29171F381EB875E6002BC7BA /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		29171F391EB875E6002BC7BA /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		29171F3A1EB875E6002BC7BA /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29171EEB1EB87322002BC7BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29171F0C1EB8749C002BC7BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29171F281EB874F8002BC7BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29171F3F1EB87672002BC7BA /* RxSwiftOctoKit.framework in Frameworks */,
+				29171F3E1EB8766B002BC7BA /* SwiftOctoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29171EE51EB87321002BC7BA = {
+			isa = PBXGroup;
+			children = (
+				29171F2C1EB874F8002BC7BA /* OctoKitTests */,
+				29171EF01EB87322002BC7BA /* Products */,
+				29171EF11EB87322002BC7BA /* Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		29171EF01EB87322002BC7BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29171EEF1EB87322002BC7BA /* SwiftOctoKit.framework */,
+				29171F101EB8749C002BC7BA /* RxSwiftOctoKit.framework */,
+				29171F2B1EB874F8002BC7BA /* OctoKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29171EF11EB87322002BC7BA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29171F091EB87356002BC7BA /* Supporting Files */,
+				29171EF21EB87322002BC7BA /* SwiftOctoKit.h */,
+				29171F121EB8749C002BC7BA /* RxSwiftOctoKit.h */,
+				29171F361EB875D1002BC7BA /* Alamofire+RxSwift.swift */,
+				29171F381EB875E6002BC7BA /* Configuration.swift */,
+				29171F391EB875E6002BC7BA /* Request.swift */,
+				29171F3A1EB875E6002BC7BA /* Router.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		29171F091EB87356002BC7BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29171EF31EB87322002BC7BA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29171F2C1EB874F8002BC7BA /* OctoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				29171F2D1EB874F8002BC7BA /* OctoKitTests.swift */,
+				29171F2F1EB874F8002BC7BA /* Info.plist */,
+			);
+			path = OctoKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29171EEC1EB87322002BC7BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29171F001EB87322002BC7BA /* SwiftOctoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29171F0D1EB8749C002BC7BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29171F201EB8749C002BC7BA /* RxSwiftOctoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		29171EEE1EB87322002BC7BA /* SwiftOctoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29171F031EB87322002BC7BA /* Build configuration list for PBXNativeTarget "SwiftOctoKit" */;
+			buildPhases = (
+				29171EEA1EB87322002BC7BA /* Sources */,
+				29171EEB1EB87322002BC7BA /* Frameworks */,
+				29171EEC1EB87322002BC7BA /* Headers */,
+				29171EED1EB87322002BC7BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftOctoKit;
+			productName = OctoKit;
+			productReference = 29171EEF1EB87322002BC7BA /* SwiftOctoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		29171F0F1EB8749C002BC7BA /* RxSwiftOctoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29171F211EB8749C002BC7BA /* Build configuration list for PBXNativeTarget "RxSwiftOctoKit" */;
+			buildPhases = (
+				29171F0B1EB8749C002BC7BA /* Sources */,
+				29171F0C1EB8749C002BC7BA /* Frameworks */,
+				29171F0D1EB8749C002BC7BA /* Headers */,
+				29171F0E1EB8749C002BC7BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxSwiftOctoKit;
+			productName = RxSwiftOctoKit;
+			productReference = 29171F101EB8749C002BC7BA /* RxSwiftOctoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		29171F2A1EB874F8002BC7BA /* OctoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29171F331EB874F8002BC7BA /* Build configuration list for PBXNativeTarget "OctoKitTests" */;
+			buildPhases = (
+				29171F271EB874F8002BC7BA /* Sources */,
+				29171F281EB874F8002BC7BA /* Frameworks */,
+				29171F291EB874F8002BC7BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29171F321EB874F8002BC7BA /* PBXTargetDependency */,
+			);
+			name = OctoKitTests;
+			productName = OctoKitTests;
+			productReference = 29171F2B1EB874F8002BC7BA /* OctoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29171EE61EB87321002BC7BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Maxwell;
+				TargetAttributes = {
+					29171EEE1EB87322002BC7BA = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					29171F0F1EB8749C002BC7BA = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					29171F2A1EB874F8002BC7BA = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 29171EE91EB87321002BC7BA /* Build configuration list for PBXProject "OctoKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29171EE51EB87321002BC7BA;
+			productRefGroup = 29171EF01EB87322002BC7BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29171EEE1EB87322002BC7BA /* SwiftOctoKit */,
+				29171F0F1EB8749C002BC7BA /* RxSwiftOctoKit */,
+				29171F2A1EB874F8002BC7BA /* OctoKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29171EED1EB87322002BC7BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29171F0E1EB8749C002BC7BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29171F291EB874F8002BC7BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29171EEA1EB87322002BC7BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29171F3B1EB875E6002BC7BA /* Configuration.swift in Sources */,
+				29171F3D1EB875E6002BC7BA /* Router.swift in Sources */,
+				29171F3C1EB875E6002BC7BA /* Request.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29171F0B1EB8749C002BC7BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29171F371EB875D1002BC7BA /* Alamofire+RxSwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29171F271EB874F8002BC7BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29171F2E1EB874F8002BC7BA /* OctoKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29171F321EB874F8002BC7BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29171EEE1EB87322002BC7BA /* SwiftOctoKit */;
+			targetProxy = 29171F311EB874F8002BC7BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29171F011EB87322002BC7BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29171F021EB87322002BC7BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29171F041EB87322002BC7BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.OctoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		29171F051EB87322002BC7BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.OctoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		29171F221EB8749C002BC7BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.RxSwiftOctoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		29171F231EB8749C002BC7BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.RxSwiftOctoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		29171F341EB874F8002BC7BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = OctoKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.OctoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		29171F351EB874F8002BC7BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = OctoKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Maxwell.OctoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29171EE91EB87321002BC7BA /* Build configuration list for PBXProject "OctoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29171F011EB87322002BC7BA /* Debug */,
+				29171F021EB87322002BC7BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29171F031EB87322002BC7BA /* Build configuration list for PBXNativeTarget "SwiftOctoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29171F041EB87322002BC7BA /* Debug */,
+				29171F051EB87322002BC7BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29171F211EB8749C002BC7BA /* Build configuration list for PBXNativeTarget "RxSwiftOctoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29171F221EB8749C002BC7BA /* Debug */,
+				29171F231EB8749C002BC7BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		29171F331EB874F8002BC7BA /* Build configuration list for PBXNativeTarget "OctoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29171F341EB874F8002BC7BA /* Debug */,
+				29171F351EB874F8002BC7BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29171EE61EB87321002BC7BA /* Project object */;
+}
