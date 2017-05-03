@@ -12,6 +12,17 @@ import Alamofire
 let githubApiURL = "https://api.github.com"
 let githubWebURL = "https://github.com"
 
+internal extension URL {
+    var URLParameters: [String: String] {
+        guard let components = URLComponents(url: self, resolvingAgainstBaseURL: false) else { return [:] }
+        var params = [String: String]()
+        components.queryItems?.forEach { queryItem in
+            params[queryItem.name] = queryItem.value
+        }
+        return params
+    }
+}
+
 public protocol Configuration {
     
     var apiEndpoint: String { get }
@@ -64,8 +75,50 @@ public struct OAuthConfiguration: Configuration {
     }
     
     public func authenticate() -> URL? {
-        var urlRequest = OAuthRouter.authorize(self).asURLRequest()
-        return urlRequest.url
+        do {
+            var urlRequest = try OAuthRouter.authorize(self).asURLRequest()
+            return urlRequest.url
+        } catch {
+            return nil
+        }
+    }
+    
+    // MARK: authorize
+    
+    public func authorize(_ session: SessionManager = SessionManager.default, code: String, completion: @escaping (_ config: TokenConfiguration) -> Void) {
+        let request = OAuthRouter.accessToken(self, code)
+        session.request(request).validate(statusCode: [200]).responseString(completionHandler: { response in
+            switch response.result {
+            case .success:
+                if let string = response.result.value {
+                    let accessToken = self.accessTokenFromResponse(string)
+                    if let accessToken = accessToken {
+                        let config = TokenConfiguration(accessToken, url: self.apiEndpoint)
+                        completion(config)
+                    }
+                }
+                break
+            case .failure(let error):
+                print("error: \(error)")
+                break
+            }
+        })
+    }
+    
+    public func handleOpenURL(_ session: SessionManager = SessionManager.default, url: URL, completion: @escaping (_ config: TokenConfiguration) -> Void) {
+        if let code = url.URLParameters["code"] {
+            authorize(session, code: code) { (config) in
+                completion(config)
+            }
+        }
+    }
+    
+    public func accessTokenFromResponse(_ response: String) -> String? {
+        let accessTokenParam = response.components(separatedBy: "&").first
+        if let accessTokenParam = accessTokenParam {
+            return accessTokenParam.components(separatedBy: "=").last
+        }
+        return nil
     }
 }
 
@@ -83,8 +136,7 @@ enum OAuthRouter: URLRequestConvertible {
     var method: HTTPMethod {
         switch self {
         case .authorize: return .get
-        default:
-            return .post
+        case .accessToken: return .post
         }
     }
     
@@ -118,7 +170,6 @@ enum OAuthRouter: URLRequestConvertible {
     // MARK: URLRequestConvertible
     
     func asURLRequest() throws -> URLRequest {
-        
         switch self {
         case .authorize(let config):
             let url = URL(string: path, relativeTo: URL(string: config.webEndpoint)!)
@@ -131,8 +182,5 @@ enum OAuthRouter: URLRequestConvertible {
             urlRequest.httpMethod = method.rawValue
             return try encoding.encode(urlRequest, with: params)
         }
-
-        let url = URL(string: path)
-        return URLRequest(url: url!)
     }
 }
