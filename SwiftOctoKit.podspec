@@ -12,12 +12,11 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Moya/Moya"
   s.license      = { :type => "MIT", :file => "License.md" }
   s.author             = { "Ash Furrow" => "ash@ashfurrow.com" }
-  s.social_media_url   = "http://twitter.com/ashfurrow"
   s.ios.deployment_target = '8.0'
   # s.osx.deployment_target = '10.10'
   # s.watchos.deployment_target = '2.0'
   # s.tvos.deployment_target = '9.0'
-  s.source       = { :git => "https://github.com/Moya/Moya.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/MaxseyLau/OctoKit.RxSwift.git", :tag => s.version }
   s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
